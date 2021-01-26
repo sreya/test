@@ -1,7 +1,7 @@
 workspace:
   name: "wac"
   image: "gcr.io/coder-dogfood/master/enterprise-dev:latest"
-  organization: "Coder"
+  organization: "default"
   container-based-vm: true
   resources:
     cpu: 2
