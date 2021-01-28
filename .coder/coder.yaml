@@ -1,6 +1,6 @@
 workspace:
   name: "wac"
-  image: "gcr.io/coder-dogfood/master/enterprise-dev:latest"
+  image: "ubuntu"
   organization: "default"
   container-based-vm: true
   resources:
