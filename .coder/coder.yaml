@@ -3,7 +3,8 @@ workspace:
   image: "ubuntu"
   organization: "default"
   container-based-vm: true
-  resources:
-    cpu: 2
-    memory: 8
-    disk: 30
+# A bad repo, Muahaha
+#  resources:
+#    cpu: 2
+#    memory: 8
+#    disk: 30
