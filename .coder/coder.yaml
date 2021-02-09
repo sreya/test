@@ -1,10 +1,11 @@
+version: 0.0
 workspace:
   name: "wac"
-  image: "ubuntu"
-  organization: "default"
-  container-based-vm: true
-# A bad repo, Muahaha
-#  resources:
-#    cpu: 2
-#    memory: 8
-#    disk: 30
+  organization: "Coder"
+  kubernetes:
+    image: codercom/enterprise-dev
+    container-based-vm: true
+    resources:
+      cpu: 2
+      memory: 8
+      disk: 30
