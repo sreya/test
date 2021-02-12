@@ -3,9 +3,9 @@ workspace:
   name: "wac"
   organization: "Coder"
   kubernetes:
-    image: codercom/enterprise-dev
+    image: coder-dogfood/master/enterprise-dev
     container-based-vm: true
     resources:
       cpu: 2
-      memory: 8
+      memory: 4
       disk: 30
