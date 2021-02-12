@@ -1,6 +1,6 @@
 version: 0.0
 workspace:
-  name: "wac"
+  name: "wac-env"
   organization: "Coder"
   kubernetes:
     image: coder-dogfood/master/enterprise-dev
