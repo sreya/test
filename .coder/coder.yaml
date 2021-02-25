@@ -3,7 +3,7 @@ workspace:
   name: "wac-env"
   organization: "default"
   kubernetes:
-    image: coder-dogfood/master/enterprise-dev
+    image: codercom/enterprise-base
     container-based-vm: true
     cpu: 2
     memory: 4
