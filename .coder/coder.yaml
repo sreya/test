@@ -5,7 +5,6 @@ workspace:
   kubernetes:
     image: coder-dogfood/master/enterprise-dev
     container-based-vm: true
-    resources:
-      cpu: 2
-      memory: 4
-      disk: 30
+    cpu: 2
+    memory: 4
+    disk: 30
