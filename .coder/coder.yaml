@@ -1,7 +1,7 @@
 version: 0.0
 workspace:
   name: "wac-env"
-  organization: "Coder"
+  organization: "default"
   kubernetes:
     image: coder-dogfood/master/enterprise-dev
     container-based-vm: true
