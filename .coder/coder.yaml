@@ -1,9 +1,10 @@
 version: 0.0
 workspace:
-  name: "wac-env"
-  kubernetes:
+  name: "wacky-env"
+  type: "kubernetes"
+  spec:
     image: codercom/enterprise-base:ubuntu
     container-based-vm: true
-    cpu: 2
-    memory: 4
-    disk: 30
+    cpu: 1
+    memory: 1.2
+    disk: 15
