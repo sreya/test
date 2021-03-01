@@ -1,7 +1,6 @@
 version: 0.0
 workspace:
   name: "wac-env"
-  organization: "default"
   kubernetes:
     image: codercom/enterprise-base:ubuntu
     container-based-vm: true
