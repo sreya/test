@@ -9,5 +9,5 @@ workspace:
     memory: 1.2
     disk: 15
     labels:
-      com.coder.wac: "true"
       favorite-color: "blue"
+      language: "english"
