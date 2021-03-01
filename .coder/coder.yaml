@@ -8,3 +8,6 @@ workspace:
     cpu: 1
     memory: 1.2
     disk: 15
+    labels:
+      com.coder.wac: "true"
+      favorite-color: "blue"
