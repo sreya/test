@@ -3,7 +3,7 @@ workspace:
   name: "wacky-env"
   type: "kubernetes"
   spec:
-    image: codercom/enterprise-base:ubuntu
+    image: ubuntu
     container-based-vm: true
     cpu: 1
     memory: 1.2
