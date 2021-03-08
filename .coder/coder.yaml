@@ -1,9 +1,13 @@
+version: 0.0
 workspace:
-  name: "wac"
-  image: "ubuntu"
-  organization: "default"
-  container-based-vm: true
-  resources:
-    cpu: 2
-    memory: 8
-    disk: 30
+  name: "wacky-env"
+  type: "kubernetes"
+  spec:
+    image: ubuntu
+    container-based-vm: true
+    cpu: 1
+    memory: 1.2
+    disk: 15
+    labels:
+      favorite-color: "blue"
+      language: "english"
