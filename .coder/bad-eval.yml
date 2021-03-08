@@ -1,0 +1,14 @@
+version: 0.0
+workspace:
+  name: "wacky-env"
+  type: "kubernetes"
+  spec:
+    image: ubuntu
+    container-based-vm: true
+    cpu: 1
+    memory: "I forgot!"
+    disk: 15
+    labels:
+      favorite-color: "blue"
+      language: "english"
+

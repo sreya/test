@@ -1,0 +1,4 @@
+version: 0
+workspace:
+  name: "foo"
+  type: "Magic"
