@@ -1,6 +1,6 @@
 version: 0.0
 workspace:
-  name: "nahnah"
+  name: "yeahyeah"
   type: "kubernetes"
   spec:
     image: ubuntu
