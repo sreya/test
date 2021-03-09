@@ -9,5 +9,5 @@ workspace:
     memory: 1.2
     disk: 15
     labels:
-      favorite-color: "green"
+      favorite-color: "purple"
       language: "english"
