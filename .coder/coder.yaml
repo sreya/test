@@ -11,3 +11,6 @@ workspace:
     labels:
       favorite-color: "blue"
       language: "english"
+  configure:
+    start:
+      command: ls
