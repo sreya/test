@@ -13,4 +13,4 @@ workspace:
       language: "english"
   configure:
     start:
-      command: ls
+      - command: ls
