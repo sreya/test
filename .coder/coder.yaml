@@ -1,6 +1,6 @@
 version: 0.0
 workspace:
-  name: "test"
+  name: "webhook"
   type: "kubernetes"
   spec:
     image: ubuntu
