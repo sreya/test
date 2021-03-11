@@ -6,7 +6,7 @@ workspace:
     image: ubuntu
     container-based-vm: true
     cpu: 1
-    memory: 1.2
+    memory: 1.6
     disk: 15
     labels:
       favorite-color: "blue"
