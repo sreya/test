@@ -7,7 +7,7 @@ workspace:
     container-based-vm: true
     cpu: 1
     memory: 1.2
-    disk: 20
+    disk: 30
     labels:
       coder: "woohoo"
       wac: "hooray"
