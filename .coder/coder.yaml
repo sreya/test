@@ -1,13 +1,32 @@
 version: 0.0
 workspace:
-  name: "webhook"
+  name: "wac"
   type: "kubernetes"
   spec:
     image: ubuntu
     container-based-vm: true
     cpu: 1
     memory: 1.2
-    disk: 40
+    disk: 20
     labels:
-      favorite-color: "steven"
-      language: "english"
+      coder: "woohoo"
+      wac: "hooray"
+configure:
+  start:
+    - name: mkdir
+      command: "/bin/bash"
+      args:
+        - "-c"
+        - "mkdir -p /root/wac/test"
+    - name: test-directory
+      command: "pwd"
+      directory: "/root/wac/test"
+    - name: test-env-vars
+      command: "/bin/bash"
+      env:
+        MY_VAR: "environment variables work!"
+      args:
+        - "-c"
+        - "echo $MY_VAR"
+
+
