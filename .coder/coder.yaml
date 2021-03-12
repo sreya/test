@@ -7,7 +7,7 @@ workspace:
     container-based-vm: true
     cpu: 1
     memory: 1.2
-    disk: 25
+    disk: 30
     labels:
       favorite-color: "steven"
       language: "english"
