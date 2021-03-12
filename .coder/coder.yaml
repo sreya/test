@@ -14,19 +14,14 @@ workspace:
   configure:
     start:
       - name: mkdir
-        command: "/bin/bash"
+        command: mkdir
         args:
-          - "-c"
-          - "mkdir -p /root/wac/test"
-      - name: test-directory
-        command: "pwd"
+          - "-p"
+          - "/root/wac/test"
+      - name: env-vars-work
+        command: "cat"
+        args:
+          - "$MY_VAR > foo"
         directory: "/root/wac/test"
-      - name: test-env-vars
-        command: "/bin/bash"
         env:
-          MY_VAR: "environment variables work!"
-        args:
-          - "-c"
-          - "echo $MY_VAR"
-
-
+          MY_VAR: "hooray they work!"
