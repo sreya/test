@@ -19,9 +19,9 @@ workspace:
           - "-p"
           - "/root/wac/test"
       - name: env-vars-work
-        command: "cat"
+        command: "echo"
         args:
-          - "$MY_VAR > foo"
+          - $MY_VAR > foo
         directory: "/root/wac/test"
         env:
           MY_VAR: "hooray they work!"
