@@ -12,4 +12,6 @@ workspace:
       language: "english"
   configure:
     start:
-      - command: ls
+      - name: "Listing directory"
+        command: ls
+      - command: touch "hello-world"
