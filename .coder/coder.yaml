@@ -16,3 +16,6 @@ workspace:
       - name: "Listing directory"
         command: ls
       - command: touch "hello-world"
+      - name: "This will fail"
+        directory: /root/na
+        command: ls
