@@ -2,7 +2,7 @@ version: 0.1
 workspace:
   type: "kubernetes"
   spec:
-    image: "docker.io/codercom/enterprise-dev"
+    image: "docker.io/ubuntu"
     container-based-vm: true
     cpu: 1
     memory: 1
@@ -15,4 +15,4 @@ workspace:
       - name: create dev url
         command: |
           ls $HOME
-          coder urls create $CODER_ENVIRONMENT_NAME 3000 --name test-me
+          coder urls create $CODER_ENVIRONMENT_NAME 3000 --name testme
