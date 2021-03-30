@@ -12,14 +12,6 @@ workspace:
       wac: "hooray"
   configure:
     start:
-      - name: mkdir
-        command: mkdir -p /root/wac/test
-      - name: env-vars-work
-        command: |
-          echo "$MY_VAR" > foo
-        directory: "/root/wac/test"
-        env:
-          MY_VAR: "hooray they work!"
       - name: create dev url
         command: |
           ls $HOME
