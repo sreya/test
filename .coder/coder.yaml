@@ -21,3 +21,7 @@ workspace:
         command: |
           ls $HOME
           coder urls create $CODER_ENVIRONMENT_NAME 3000 --name testme
+      - name: create another dev url
+        command: |
+          ls $HOME
+          coder urls create $CODER_ENVIRONMENT_NAME 3000 --name test2
