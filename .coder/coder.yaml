@@ -2,7 +2,7 @@ version: 0.1
 workspace:
   type: "kubernetes"
   spec:
-    image: "docker.io/ubuntu"
+    image: "docker.io/ubuntu:18.04"
     container-based-vm: true
     cpu: 1
     memory: 1
