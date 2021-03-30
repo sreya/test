@@ -12,6 +12,11 @@ workspace:
       wac: "hooray"
   configure:
     start:
+      - name: install ca-certificates
+        command: |
+          apt update
+          apt install -y ca-certificates -y
+          update-ca-certificates
       - name: create dev url
         command: |
           ls $HOME
