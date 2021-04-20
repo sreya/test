@@ -8,8 +8,13 @@ workspace:
       # Image should already be registered in your coder's organization.
       # Use the image's repo name.
       #image: coder-dogfood/master/enterprise-dev
-      image: ubuntu
-      container-based-vm: true
-      cpu: 16
-      memory: 16
-      disk: 96
+      image: 
+        value: ubuntu
+      container-based-vm:
+        value: true
+      cpu: 
+        value: 16
+      memory: 
+        value: 16
+      disk: 
+        value: 96
