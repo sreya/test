@@ -1,21 +1,14 @@
-version: 0.0
+# Assuming oauth works correctly,
+#   coder envs create-from-config --org default -r https://github.com/cdr/m
+version: 0.2
 workspace:
-  #name: "wacky-env"
-  type: "kubernetes"
-  spec:
-    image: ubuntu
-    container-based-vm: true
-    cpu: 1.2
-    memory: 2.1
-    disk: 23
-    labels:
-      favorite-color: "blue"
-      language: "english"
-  configure:
-    start:
-      - name: "Listing directory"
-        command: ls
-      - command: touch "hello-world"
-      - name: "This will fail"
-        directory: /root/na
-        command: ls
+  type: kubernetes
+  specs:
+    kubernetes:
+      # Image should already be registered in your coder's organization.
+      # Use the image's repo name.
+      image: coder-dogfood/master/enterprise-dev
+      container-based-vm: true
+      cpu: 16
+      memory: 16
+      disk: 96
