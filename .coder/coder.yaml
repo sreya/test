@@ -1,31 +1,32 @@
 # Assuming oauth works correctly,
 #   coder envs create-from-config --org default -r https://github.com/cdr/m
-version: 0.0
+version: 0.2
 workspace:
   type: "kubernetes"
-  spec:
-    # Image should already be registered in your coder's organization.
-    # Use the image's repo name.
-    image:
-      value: ubuntu
-    container-based-vm:
-      value: true
-    cpu:
-      value: 16
-    memory:
-      value: 16
-    disk:
-      value: 120
-  devURLs:
-    value:
-      - name: "coderdoc"
-        scheme: "http"
-        port: 3000
-        access: "org"
-      - name: "devprod"
-        scheme: "http"
-        port: 8080
-        access: "private"
+  specs:
+    kubernetes:
+      # Image should already be registered in your coder's organization.
+      # Use the image's repo name.
+      image:
+        value: coder-dogfood/master/enterprise-dev
+      container-based-vm:
+        value: true
+      cpu:
+        value: 16
+      memory:
+        value: 16
+      disk:
+        value: 120
+    devURLs:
+      value:
+        - name: "coderdoc"
+          scheme: "http"
+          port: 3000
+          access: "org"
+        - name: "devprod"
+          scheme: "http"
+          port: 8080
+          access: "private"
   # Our configure section duplicates the /coder/configure script
   # this is simply for dogfooding's sake.
   configure:
