@@ -1,20 +1,49 @@
 # Assuming oauth works correctly,
 #   coder envs create-from-config --org default -r https://github.com/cdr/m
-version: 0.2
+version: 0.0
 workspace:
-  type: kubernetes
-  specs:
-    kubernetes:
-      # Image should already be registered in your coder's organization.
-      # Use the image's repo name.
-      #image: coder-dogfood/master/enterprise-dev
-      image: 
-        value: ubuntu
-      container-based-vm:
-        value: true
-      cpu: 
-        value: 16
-      memory: 
-        value: 16
-      disk: 
-        value: 96
+  type: "kubernetes"
+  spec:
+    # Image should already be registered in your coder's organization.
+    # Use the image's repo name.
+    image:
+      value: ubuntu
+    container-based-vm:
+      value: true
+    cpu:
+      value: 16
+    memory:
+      value: 16
+    disk:
+      value: 120
+  devURLs:
+    value:
+      - name: "coderdoc"
+        scheme: "http"
+        port: 3000
+        access: "org"
+      - name: "devprod"
+        scheme: "http"
+        port: 8080
+        access: "private"
+  # Our configure section duplicates the /coder/configure script
+  # this is simply for dogfooding's sake.
+  configure:
+    start:
+      value:
+        - name: "Install NVM"
+          command: |
+            # Install NVM, but only if it's not already installed
+            if [ ! -d "$HOME/.nvm" ]; then
+              echo "Installing NVM"
+              curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+            else
+              echo "NVM is already installed"
+            fi
+        - name: "Ensure GitHub host key"
+          command: |
+            # Ensure we have GitHub's host key, because all clones are over SSH (enforced by
+            # /etc/gitconfig)
+            if ! ssh-keygen -F github.com > /dev/null; then
+              ssh-keyscan github.com >> ~/.ssh/known_hosts 2> /dev/null
+            fi
