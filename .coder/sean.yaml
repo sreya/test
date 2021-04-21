@@ -1,0 +1,26 @@
+version: 0.1
+workspace:
+  type: "kubernetes"
+  spec:
+    image: "ubuntu:20.04"
+    container-based-vm: false
+    cpu: 1
+    memory: 1
+    disk: 30
+    labels:
+      sean: "<3"
+  configure:
+    start:
+      - name: install ca-certificates
+        command: |
+          apt update
+          apt install -y ca-certificates -y
+          update-ca-certificates
+      - name: create dev url
+        command: |
+          ls $HOME
+          coder urls create $CODER_ENVIRONMENT_NAME 3000 --name testme
+      - name: create another dev url
+        command: |
+          ls $HOME
+          coder urls create $CODER_ENVIRONMENT_NAME 3001 --name test2
