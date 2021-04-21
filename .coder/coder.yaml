@@ -8,25 +8,25 @@ workspace:
       # Image should already be registered in your coder's organization.
       # Use the image's repo name.
       image:
-        value: coder-dogfood/master/enterprise-dev
+        value: ubuntu
       container-based-vm:
         value: true
       cpu:
-        value: 16
+        value: 1
       memory:
-        value: 16
+        value: 1
       disk:
-        value: 120
-    devURLs:
-      value:
-        - name: "coderdoc"
-          scheme: "http"
-          port: 3000
-          access: "org"
-        - name: "devprod"
-          scheme: "http"
-          port: 8080
-          access: "private"
+        value: 12
+  devURLs:
+    value:
+      - name: "coderdoc"
+        scheme: "http"
+        port: 3000
+        access: "org"
+      - name: "devprod"
+        scheme: "http"
+        port: 8080
+        access: "private"
   # Our configure section duplicates the /coder/configure script
   # this is simply for dogfooding's sake.
   configure:
