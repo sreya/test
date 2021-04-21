@@ -8,7 +8,7 @@ workspace:
     memory: 1
     disk: 30
     labels:
-      sean: "<3"
+      sean: "luv"
   configure:
     start:
       - name: install ca-certificates
