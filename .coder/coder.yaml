@@ -2,8 +2,8 @@ version: 0.1
 workspace:
   type: "kubernetes"
   spec:
-    image: "ubuntu:18.04"
-    container-based-vm: true
+    image: "coder-dogfood/master/enterprise-dev"
+    container-based-vm: false
     cpu: 1
     memory: 1
     disk: 30
