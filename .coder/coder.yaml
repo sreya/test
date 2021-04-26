@@ -1,54 +1,14 @@
-version: 0.2
+version: 0.0
 workspace:
-  # Type indicates which provider to use when building the workspace.
-  # It corrosponds to the `kubernetes` section in the `specs` section.
-  type: kubernetes
-  specs:
-    kubernetes:
-      image: 
-        value: index.docker.io/ubuntu
-      container-based-vm: 
-        value: true
-      cpu: 
-        value: 2
-      memory: 
-        value: 2
-      disk: 
-        value: 12
-      gpuCount: 
-        value: 0
-      labels:
-        value:
-          com.coder.custom.hello: "hello"
-          com.coder.custom.world: "world"
-  configure:
-    start:
-      value:
-        - name: "install curl"
-          command: |
-            apt update
-            apt install -y curl
-        - name: "install Go binary"
-          command: "go install"
-          directory: /home/coder/go/src/github.com/my-project
-          shell: "bash"
-          env:
-            GOPATH: /home/coder/go
-  devURLs:
-    value:
-      - name: MyWebsite
-        port: 3000
-        scheme: http
-        access: private
-      - name: PublicPort
-        port: 8080
-        scheme: https
-        access: public
-      - name: OrgWebsite
-        port: 3001
-        scheme: http
-        access: org
-      - name: AuthedSite
-        port: 8081
-        scheme: https
-        access: authed
+  name: "wacky-env"
+  type: "kubernetes"
+  spec:
+    image: ubuntu
+    container-based-vm: true
+    cpu: 1.2
+    cpu: 1.3
+    memory: 2.1
+    disk: 23
+    labels:
+      favorite-color: "blue"
+      language: "english"
