@@ -3,7 +3,7 @@ workspace:
   type: "kubernetes"
   spec:
     image: ubuntu
-    container-based-vm: true
+    container-based-vm: false
     cpu: 1.2
     memory: 2.1
     disk: 23
