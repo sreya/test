@@ -10,13 +10,13 @@ workspace:
       container-based-vm: 
         value: true
       cpu: 
-        value: 4
-      memory: 
-        value: 16
-      disk: 
-        value: 128
-      gpuCount: 
         value: 1
+      memory: 
+        value: 2
+      disk: 
+        value: 12
+      gpuCount: 
+        value: 0
       labels:
         value:
           com.coder.custom.hello: "hello"
