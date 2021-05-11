@@ -15,7 +15,7 @@ workspace:
         value: 2
       disk: 
         value: 12
-      gpuCount: 
+      gpu-count: 
         value: 0
       labels:
         value:
@@ -34,7 +34,7 @@ workspace:
           shell: "bash"
           env:
             GOPATH: /home/coder/go
-  devURLs:
+  dev-urls:
     value:
       - name: MyWebsite
         port: 3000
