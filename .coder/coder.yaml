@@ -4,8 +4,8 @@ workspace:
   spec:
     image: "coder-dogfood/master/enterprise-dev"
     container-based-vm: false
-    cpu: 1
-    memory: 1
+    cpu: 2
+    memory: 2
     disk: 30
     labels:
       coder: "woohoo"
