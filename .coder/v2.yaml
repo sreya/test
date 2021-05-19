@@ -15,9 +15,9 @@ workspace:
         value: 30
       env:
         value: 
-          - name: TESTME
+          - key: TESTME
             value: HOORAY
-          - name: HERE_WE_GO_TEST
+          - key: HERE_WE_GO_TEST
             value: YUPYUPYUP
       labels:
         value: 
