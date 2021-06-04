@@ -8,13 +8,13 @@ workspace:
       image: 
         value: index.docker.io/ubuntu
       container-based-vm: 
-        value: true
+        value: false
       cpu: 
         value: "2"
       memory: 
         value: 2
       disk: 
-        value: 12
+        value: 20
       gpu-count: 
         value: 0
       node-selector:
