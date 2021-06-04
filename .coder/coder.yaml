@@ -17,10 +17,10 @@ workspace:
         value: 20
       gpu-count: 
         value: 0
-      node-selector:
-        value:
-          - key: kubernetes.io/hostname
-            value: gke-dev-2-default-pool-cba3c583-hxt5
+#       node-selector:
+#         value:
+#           - key: kubernetes.io/hostname
+#             value: gke-dev-2-default-pool-cba3c583-hxt5
       labels:
         value:
           com.coder.custom.hello: "hello"
