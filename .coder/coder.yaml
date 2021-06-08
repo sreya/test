@@ -21,6 +21,23 @@ workspace:
 #         value:
 #           - key: kubernetes.io/hostname
 #             value: gke-dev-2-default-pool-cba3c583-hxt5
+      tolerations:
+        policy: append
+        value:
+          - key: test-1
+            operator: Exists
+            value: value-1
+            effect: NoSchedule
+            tolerationSeconds: 200
+          - key: test-2
+            operator: Equal
+            value: value-2
+            effect: PreferNoSchedule
+            tolerationSeconds: 400
+          - key: test-3
+            operator: null
+            value: value-3
+            effect: NoExecute
       labels:
         value:
           com.coder.custom.hello: "hello"
