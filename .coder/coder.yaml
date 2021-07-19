@@ -51,16 +51,16 @@ workspace:
             apt install -y curl
         - name: "go dir"
           command: "pwd > log.txt"
-          directory: /home/coder/go
+          directory: /root/test
           shell: "bash"
           env:
             GOPATH: /home/coder/go
-        - name: "install Go binary"
-          command: "go install"
-          directory: /home/coder/go/src/github.com/my-project
-          shell: "bash"
-          env:
-            GOPATH: /home/coder/go
+#         - name: "install Go binary"
+#           command: "go install"
+#           directory: /home/coder/go/src/github.com/my-project
+#           shell: "bash"
+#           env:
+#             GOPATH: /home/coder/go
   dev-urls:
     value:
       - name: MyWebsite
