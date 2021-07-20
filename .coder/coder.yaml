@@ -49,9 +49,13 @@ workspace:
           command: |
             apt update
             apt install -y curl
+        - name: "make dir"
+          command: "mkdir /coder/test"
+          directory: /coder/test
+          shell: "bash"
         - name: "go dir"
           command: "pwd > log.txt"
-          directory: /root/test
+          directory: /coder/test
           shell: "bash"
           env:
             GOPATH: /home/coder/go
