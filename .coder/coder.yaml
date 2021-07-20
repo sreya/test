@@ -45,10 +45,10 @@ workspace:
   configure:
     start:
       value:
-        - name: "install curl"
-          command: |
-            apt update
-            apt install -y curl
+#         - name: "install curl"
+#           command: |
+#             apt update
+#             apt install -y curl
         - name: "make dir"
           command: "mkdir /coder/test"
           directory: /coder/test
