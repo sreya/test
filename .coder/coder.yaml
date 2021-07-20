@@ -50,7 +50,7 @@ workspace:
 #             apt update
 #             apt install -y curl
         - name: "make dir"
-          command: "mkdir /home/coder/test"
+          command: "mkdir -p /home/coder/test"
           shell: "bash"
         - name: "go dir"
           command: "pwd > log.txt"
