@@ -58,6 +58,12 @@ workspace:
           shell: "bash"
           env:
             GOPATH: /home/coder/go
+        - name: "go dir"
+          command: "echo $ENV_ARG >> log.txt"
+          directory: /home/coder/test
+          shell: "bash"
+          env:
+            ENV_ARG: "Hello"
 #         - name: "install Go binary"
 #           command: "go install"
 #           directory: /home/coder/go/src/github.com/my-project
