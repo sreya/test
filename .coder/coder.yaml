@@ -8,7 +8,7 @@ workspace:
       image: 
         value: codercom/enterprise-base:ubuntu
       container-based-vm: 
-        value: true
+        value: false
       cpu: 
         value: "2"
       memory: 
