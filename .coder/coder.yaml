@@ -64,27 +64,30 @@ workspace:
           shell: "bash"
           env:
             ENV_ARG: "Hello"
+        - name: "go dir"
+          command: "cd /tmp && ENV_B_ARG=Hello echo $ENV_B_ARG >> log.txt"
+          shell: "bash"
 #         - name: "install Go binary"
 #           command: "go install"
 #           directory: /home/coder/go/src/github.com/my-project
 #           shell: "bash"
 #           env:
 #             GOPATH: /home/coder/go
-  dev-urls:
-    value:
-      - name: MyWebsite
-        port: 3000
-        scheme: http
-        access: private
-      - name: PublicPort
-        port: 8080
-        scheme: https
-        access: public
-      - name: OrgWebsite
-        port: 3001
-        scheme: http
-        access: org
-      - name: AuthedSite
-        port: 8081
-        scheme: https
-        access: authed
+#   dev-urls:
+#     value:
+#       - name: MyWebsite
+#         port: 3000
+#         scheme: http
+#         access: private
+#       - name: PublicPort
+#         port: 8080
+#         scheme: https
+#         access: public
+#       - name: OrgWebsite
+#         port: 3001
+#         scheme: http
+#         access: org
+#       - name: AuthedSite
+#         port: 8081
+#         scheme: https
+#         access: authed
