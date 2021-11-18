@@ -1,0 +1,62 @@
+version: 0.2
+workspace:
+  # Type indicates which provider to use when building the workspace.
+  # It corrosponds to the `kubernetes` section in the `specs` section.
+  type: aws-ec2-docker
+  specs:
+    aws-ec2-docker:
+      instance-type: 
+        value: codercom/enterprise-base:ubuntu
+      image: 
+        value: codercom/enterprise-base:ubuntu
+      disk: 
+        value: 20
+  configure:
+    start:
+      value:
+#         - name: "install curl"
+#           command: |
+#             apt update
+#             apt install -y curl
+        - name: "make dir"
+          command: "mkdir -p /home/coder/test"
+          shell: "bash"
+        - name: "go dir"
+          command: "pwd > log.txt"
+          directory: /home/coder/test
+          shell: "bash"
+          env:
+            GOPATH: /home/coder/go
+        - name: "go dir"
+          command: "echo $ENV_ARG >> log.txt"
+          directory: /home/coder/test
+          shell: "bash"
+          env:
+            ENV_ARG: "Hello"
+        - name: "go dir"
+          command: "cd /tmp && ENV_B_ARG=Hello echo $ENV_B_ARG >> log.txt"
+          shell: "bash"
+#         - name: "install Go binary"
+#           command: "go install"
+#           directory: /home/coder/go/src/github.com/my-project
+#           shell: "bash"
+#           env:
+#             GOPATH: /home/coder/go
+#   dev-urls:
+#     value:
+#       - name: MyWebsite
+#         port: 3000
+#         scheme: http
+#         access: private
+#       - name: PublicPort
+#         port: 8080
+#         scheme: https
+#         access: public
+#       - name: OrgWebsite
+#         port: 3001
+#         scheme: http
+#         access: org
+#       - name: AuthedSite
+#         port: 8081
+#         scheme: https
+#         access: authed
