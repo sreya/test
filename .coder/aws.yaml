@@ -7,7 +7,7 @@ workspace:
     aws-ec2-docker:
       instance-type: 
         value: codercom/enterprise-base:ubuntu
-      image: 
+      container-image: 
         value: codercom/enterprise-base:ubuntu
       disk: 
         value: 20
