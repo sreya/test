@@ -9,7 +9,7 @@ workspace:
         value: codercom/enterprise-base:ubuntu
       container-image: 
         value: codercom/enterprise-base:ubuntu
-      disk: 
+      disk-size: 
         value: 20
   configure:
     start:
