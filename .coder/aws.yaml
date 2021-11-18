@@ -7,10 +7,10 @@ workspace:
     aws-ec2-docker:
       instance-type:
         value: t2.micro
-      image:
+      container-image:
         value: ubuntu
         policy: read
-      disk:
+      disk-size:
         value: 96
         policy: write
   configure:
