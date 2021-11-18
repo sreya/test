@@ -5,12 +5,14 @@ workspace:
   type: aws-ec2-docker
   specs:
     aws-ec2-docker:
-      instance-type: 
-        value: codercom/enterprise-base:ubuntu
-      container-image: 
-        value: codercom/enterprise-base:ubuntu
-      disk-size: 
-        value: 20
+      instance-type:
+        value: t2.micro
+      image:
+        value: ubuntu
+        policy: read
+      disk:
+        value: 96
+        policy: write
   configure:
     start:
       value:
