@@ -2,7 +2,7 @@ version: 0.2
 workspace:
   type: docker
   specs:
-    docker:
+    kubernetes:
       image:
         value: ubuntu
         policy: read
