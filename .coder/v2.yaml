@@ -4,7 +4,7 @@ workspace:
   specs:
     kubernetes:
       image: 
-        value: "codercom/enterprise-base:ubuntu"
+        value: "index.docker.io/codercom/enterprise-base:ubuntu"
       container-based-vm: 
         value: false
       cpu: 
