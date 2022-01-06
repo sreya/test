@@ -4,7 +4,7 @@ workspace:
   specs:
     kubernetes:
       image: 
-        value: "gcr.io/coder-enterprise-nightlies/dean-test:centos"
+        value: "asia.gcr.io/coder-enterprise-nightlies/dean-test:latest"
       container-based-vm: 
         value: false
       cpu: 
