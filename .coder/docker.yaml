@@ -4,7 +4,7 @@ workspace:
   specs:
     docker:
       image:
-        value: codercom/enterprise-base
+        value: codercom/enterprise-base:ubuntu
         policy: read
   configure:
     start:
