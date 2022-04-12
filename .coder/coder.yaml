@@ -7,7 +7,7 @@ workspace:
     kubernetes:
       env:
         value:
-         - key: "TEST_ENV_VAR"
+         - key: "TEST_WAC_LOCAL"
            value: "Always"
       image: 
         value: codercom/enterprise-base:ubuntu
