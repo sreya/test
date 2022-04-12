@@ -5,6 +5,10 @@ workspace:
   type: kubernetes
   specs:
     kubernetes:
+      env:
+        value:
+         - key: "TEST_ENV_VAR"
+           value: "Always"
       image: 
         value: codercom/enterprise-base:ubuntu
       container-based-vm: 
