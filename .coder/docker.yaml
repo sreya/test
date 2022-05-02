@@ -9,6 +9,8 @@ workspace:
   configure:
     start:
       value:
+        - name: "coder cmd"
+          command: "coder workspaces ls > out"
         - name: "install curl"
           command: |
             apt update
