@@ -10,7 +10,7 @@ workspace:
     start:
       value:
         - name: "coder cmd"
-          command: "coder workspaces ls > out"
+          command: "coder workspaces ls > $HOME/out"
 #         - name: "install curl"
 #           command: |
 #             apt update
