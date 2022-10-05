@@ -14,7 +14,7 @@ workspace:
       container-based-vm: 
         value: false
       cpu: 
-        value: "2"
+        value: "3"
       memory: 
         value: 2
       disk: 
