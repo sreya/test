@@ -1,5 +1,5 @@
-versionss: 0.2
-workspacess:
+version: 0.2
+workspace:
   # Type indicates which provider to use when building the workspace.
   # It corrosponds to the `kubernetes` section in the `specs` section
   type: kubernetes
