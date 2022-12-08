@@ -10,7 +10,7 @@ workspace:
          - key: "TEST_WAC_LOCAL"
            value: "Alwaysss"
       image: 
-        value: codercom/enterprise-base:ubuntu
+        value: coder-dogfood/master/coder-dev-ubuntu:latest
       container-based-vm: 
         value: false
       cpu: 
