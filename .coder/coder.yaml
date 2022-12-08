@@ -1,8 +1,8 @@
-version: 0.2
-workspace:
+versionss: 0.2
+workspacess:
   # Type indicates which provider to use when building the workspace.
   # It corrosponds to the `kubernetes` section in the `specs` section
-  type: bad-type
+  type: kubernetes
   specs:
     kubernetes:
       env:
